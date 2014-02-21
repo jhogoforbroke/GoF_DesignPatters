@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2197D278-5BD8-4BCB-BB7D-F4702F4FD275}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Creational</RootNamespace>
+    <AssemblyName>Creational</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract Factory\ExemploDidatico\AbstractFactory\AbstractFactory.cs" />
+    <Compile Include="Abstract Factory\ExemploDidatico\AbstractProduct\AbstractProductA.cs" />
+    <Compile Include="Abstract Factory\ExemploDidatico\AbstractProduct\AbstractProductB.cs" />
+    <Compile Include="Abstract Factory\ExemploDidatico\Client\Cliente.cs" />
+    <Compile Include="Abstract Factory\ExemploDidatico\ConcreteFactory\ConcreteFactory1.cs" />
+    <Compile Include="Abstract Factory\ExemploDidatico\ConcreteFactory\ConcreteFactory2.cs" />
+    <Compile Include="Abstract Factory\ExemploDidatico\Product\ProductA1.cs" />
+    <Compile Include="Abstract Factory\ExemploDidatico\Product\ProductA2.cs" />
+    <Compile Include="Abstract Factory\ExemploDidatico\Product\ProductB1.cs" />
+    <Compile Include="Abstract Factory\ExemploDidatico\Product\ProductB2.cs" />
+    <Compile Include="Abstract Factory\ExemploDidatico\Teste.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\AbstractProduct\Celular.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\AbstractFactory\Fabricante.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\AbstractProduct\Notebook.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\AbstractProduct\Tablet.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\Client\Usuario.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\ConcreteFactory\Apple.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\ConcreteFactory\Sansung.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\ConcreteFactory\Sony.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\Product\GalaxyS4.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\Product\GalaxyTab3.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\Product\IPadAir16G.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\Product\IPhone5S.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\Product\MacBookAirMD71.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\Product\SansungAtviBook2.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\Product\SonyVaioFit15Svf.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\Product\XperiaTabletZ4G.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\Product\XperiaZQ.cs" />
+    <Compile Include="Abstract Factory\ExemploMundoReal\Teste.cs" />
+    <Compile Include="Factory Method\ExemploDidatico\ConcreteProduct\ConcreteProductA.cs" />
+    <Compile Include="Factory Method\ExemploDidatico\ConcreteProduct\ConcreteProductB.cs" />
+    <Compile Include="Factory Method\ExemploDidatico\ConcreteCreator\ConcreteCreatorA.cs" />
+    <Compile Include="Factory Method\ExemploDidatico\ConcreteCreator\ConcreteCreatorB.cs" />
+    <Compile Include="Factory Method\ExemploDidatico\Creator\Creator.cs" />
+    <Compile Include="Factory Method\ExemploDidatico\Teste.cs" />
+    <Compile Include="Factory Method\ExemploDidatico\Product\Product.cs" />
+    <Compile Include="Factory Method\ExemploMundoReal\ConcreteProduct\Inspiron15R5437.cs" />
+    <Compile Include="Factory Method\ExemploMundoReal\ConcreteProduct\MacBookAirMd71.cs" />
+    <Compile Include="Factory Method\ExemploMundoReal\ConcreteCreator\Apple.cs" />
+    <Compile Include="Factory Method\ExemploMundoReal\ConcreteCreator\Dell.cs" />
+    <Compile Include="Factory Method\ExemploMundoReal\Creator\Fabricante.cs" />
+    <Compile Include="Factory Method\ExemploMundoReal\ConcreteCreator\Sony.cs" />
+    <Compile Include="Factory Method\ExemploMundoReal\Product\Notebook.cs" />
+    <Compile Include="Factory Method\ExemploMundoReal\ConcreteProduct\SonyVaioFit15Svf.cs" />
+    <Compile Include="Factory Method\ExemploMundoReal\Teste.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Abstract Factory\README.md" />
+    <None Include="Factory Method\README.md" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
