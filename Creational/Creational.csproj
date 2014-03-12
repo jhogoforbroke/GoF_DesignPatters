@@ -74,6 +74,17 @@
     <Compile Include="Abstract Factory\ExemploMundoReal\Product\XperiaTabletZ4G.cs" />
     <Compile Include="Abstract Factory\ExemploMundoReal\Product\XperiaZQ.cs" />
     <Compile Include="Abstract Factory\ExemploMundoReal\Teste.cs" />
+    <Compile Include="Builder\ExemploDidatico\Builder\Builder.cs" />
+    <Compile Include="Builder\ExemploDidatico\ConcreteBuilder\ConcreteBuilder2.cs" />
+    <Compile Include="Builder\ExemploDidatico\ConcreteBuilder\ConcreteBuilder1.cs" />
+    <Compile Include="Builder\ExemploDidatico\Director\Director.cs" />
+    <Compile Include="Builder\ExemploDidatico\Product\Product.cs" />
+    <Compile Include="Builder\ExemploDidatico\Teste.cs" />
+    <Compile Include="Builder\ExemploMundoReal\Builder\NotebookBuilder.cs" />
+    <Compile Include="Builder\ExemploMundoReal\ConcreteBuilder\MacBookBuilder.cs" />
+    <Compile Include="Builder\ExemploMundoReal\Director\Apple.cs" />
+    <Compile Include="Builder\ExemploMundoReal\Product\Notebook.cs" />
+    <Compile Include="Builder\ExemploMundoReal\Teste.cs" />
     <Compile Include="Factory Method\ExemploDidatico\ConcreteProduct\ConcreteProductA.cs" />
     <Compile Include="Factory Method\ExemploDidatico\ConcreteProduct\ConcreteProductB.cs" />
     <Compile Include="Factory Method\ExemploDidatico\ConcreteCreator\ConcreteCreatorA.cs" />
@@ -94,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Abstract Factory\README.md" />
+    <None Include="Builder\README.md" />
     <None Include="Factory Method\README.md" />
     <None Include="packages.config" />
   </ItemGroup>
