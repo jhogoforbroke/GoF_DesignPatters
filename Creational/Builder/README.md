@@ -1,4 +1,4 @@
-﻿Factory Method
+﻿Builder
 ================
 
 Separa a construção de objetos complexos de sua representação, sendo assim um mesmo processo de construção poderá criar diferentes representações
